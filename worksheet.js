@@ -35,6 +35,12 @@ const characters = [
 
 //***MAP***
 //1. Get array of all names
+const  allNames = characters.map(character => {
+    return `<li>${character.name}</li>`;
+})
+console.log('all names');
+console.log(allNames);
+
 //2. Get array of all heights
 //3. Get array of objects with just name and height properties
 //4. Get array of all first names
@@ -53,7 +59,7 @@ const charactersGreaterThan100 = characters.filter( character => {
 
 
 // console.log('mass > 100');
-console.log('mass > 100' + charactersGreaterThan100);
+// console.log('mass > 100' + charactersGreaterThan100);
 console.log(charactersGreaterThan100);
 
 //2. Get characters with height less than 200
