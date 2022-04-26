@@ -50,8 +50,10 @@ const characters = [
 const charactersGreaterThan100 = characters.filter( character => {
     return character.mass > 100;
 });
+
+
 // console.log('mass > 100');
-console.log('mass > 100');
+console.log('mass > 100' + charactersGreaterThan100);
 console.log(charactersGreaterThan100);
 
 //2. Get characters with height less than 200
