@@ -80,3 +80,5 @@ const characters = [
 2. Is there at least one character with blue eyes?
 3. Is there at least one character taller than 200?
 4. Is there at least one character that has mass less than 50?
+
+## I use the NODEMON package to run this code. NODEMON watches the file system, and automatically restarts the process whenever a change is made.
