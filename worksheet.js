@@ -48,6 +48,11 @@ const allHeights = characters.map(character => {
 console.log('all heights');
 console.log(allHeights);
 //3. Get array of objects with just name and height properties
+console.log('all names and heights');
+const allNamesAndHeights = characters.map(character => {
+    return `<li>${character.name} - ${character.height}</li>`;
+});
+console.log(allNamesAndHeights);
 //4. Get array of all first names
 
 //***REDUCE***
