@@ -50,6 +50,7 @@ const characters = [
 const charactersGreaterThan100 = characters.filter( character => {
     return character.mass > 100;
 });
+// console.log('mass > 100');
 console.log('mass > 100');
 console.log(charactersGreaterThan100);
 

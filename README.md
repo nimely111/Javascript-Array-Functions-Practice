@@ -1,6 +1,6 @@
 # Quick JavaScript Array Functions Practice
 
-Want to learn how to use JavaScript array functions like map, reduce, filter, etc? Use this worksheet and the corresponding videos to figure out how!
+Want to learn how to use JavaScript array functions like map, reduce, filter, etc? Use this worksheet and practice your logical skills with fun.
 
 ## Sample Data
 
