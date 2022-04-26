@@ -57,7 +57,17 @@ console.log('height < 200');
 console.log(charactersHeightLessThan200);
 
 //3. Get all male characters
+const allMaleCharacters = characters.filter(character =>{
+    return character.gender.startsWith('m');
+});
+console.log('all male charactrs');
+console.log(allMaleCharacters);
 //4. Get all female characters
+const allFemalecharacters = characters.filter(character => {
+    return character.gender.startsWith('f');
+});
+console.log('all female charactrs');
+console.log(allFemalecharacters);
 
 //***SORT***
 //1. Sort by mass
