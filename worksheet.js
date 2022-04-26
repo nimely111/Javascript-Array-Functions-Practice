@@ -42,6 +42,11 @@ console.log('all names');
 console.log(allNames);
 
 //2. Get array of all heights
+const allHeights = characters.map(character => {
+    return `<li>${character.name}</li>`;
+});
+console.log('all heights');
+console.log(allHeights);
 //3. Get array of objects with just name and height properties
 //4. Get array of all first names
 
