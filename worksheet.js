@@ -5,6 +5,7 @@ const characters = [
         mass: 77,
         eye_color: 'blue',
         gender: 'male',
+        id: 1,
     },
     {
         name: 'Darth Vader',
@@ -12,6 +13,7 @@ const characters = [
         mass: 136,
         eye_color: 'yellow',
         gender: 'male',
+        id: 2,
     },
     {
         name: 'Leia Organa',
@@ -19,6 +21,7 @@ const characters = [
         mass: 49,
         eye_color: 'brown',
         gender: 'female',
+        id: 3,
     },
     {
         name: 'Anakin Skywalker',
@@ -26,6 +29,7 @@ const characters = [
         mass: 84,
         eye_color: 'blue',
         gender: 'male',
+        id: 4,
     },
 ];
 
