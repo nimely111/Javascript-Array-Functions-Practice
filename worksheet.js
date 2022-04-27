@@ -5,7 +5,6 @@ const characters = [
         mass: 77,
         eye_color: 'blue',
         gender: 'male',
-        id: 1,
     },
     {
         name: 'Darth Vader',
@@ -13,7 +12,6 @@ const characters = [
         mass: 136,
         eye_color: 'yellow',
         gender: 'male',
-        id: 2,
     },
     {
         name: 'Leia Organa',
@@ -21,7 +19,6 @@ const characters = [
         mass: 49,
         eye_color: 'brown',
         gender: 'female',
-        id: 3,
     },
     {
         name: 'Anakin Skywalker',
@@ -29,7 +26,6 @@ const characters = [
         mass: 84,
         eye_color: 'blue',
         gender: 'male',
-        id: 4,
     },
 ];
 
@@ -41,19 +37,31 @@ const  allNames = characters.map(character => {
 console.log('all names');
 console.log(allNames);
 
+
+
 //2. Get array of all heights
 const allHeights = characters.map(character => {
-    return `<li>${character.name}</li>`;
+    return `<li>${character.height}</li>`;
 });
 console.log('all heights');
 console.log(allHeights);
+
+
 //3. Get array of objects with just name and height properties
-console.log('all names and heights');
-const allNamesAndHeights = characters.map(character => {
-    return `<li>${character.name} - ${character.height}</li>`;
+const allNamesAndHeights = characters.map(name_height => {
+    return `<li>${name_height.name } - ${name_height.height}</li>`;
 });
+console.log('all names and heights');
 console.log(allNamesAndHeights);
+
+
 //4. Get array of all first names
+const allFirstNames = characters.map(firstName =>{
+    return `${firstName.name}`
+});
+console.log('all first names');
+console.log(allFirstNames)
+
 
 //***REDUCE***
 //1. Get total mass of all characters
@@ -66,30 +74,31 @@ console.log(allNamesAndHeights);
 const charactersGreaterThan100 = characters.filter( character => {
     return character.mass > 100;
 });
-
-
-// console.log('mass > 100');
-// console.log('mass > 100' + charactersGreaterThan100);
+console.log(`total mass > 100 is: ${ charactersGreaterThan100.length}`);
 console.log(charactersGreaterThan100);
+
 
 //2. Get characters with height less than 200
 const charactersHeightLessThan200 = characters.filter(character => {
     return character.height < 200;
 });
-console.log('height < 200');
+console.log(`total height < 200 is: ${ charactersHeightLessThan200.length}`);
 console.log(charactersHeightLessThan200);
+
 
 //3. Get all male characters
 const allMaleCharacters = characters.filter(character =>{
     return character.gender.startsWith('m');
 });
-console.log('all male charactrs');
+console.log(`total of all male charactr is: ${ allMaleCharacters.length}`);
 console.log(allMaleCharacters);
+
+
 //4. Get all female characters
 const allFemalecharacters = characters.filter(character => {
     return character.gender.startsWith('f');
 });
-console.log('all female charactrs');
+console.log(`total of all female charactrs are :${ allFemalecharacters.length}`);
 console.log(allFemalecharacters);
 
 //***SORT***
